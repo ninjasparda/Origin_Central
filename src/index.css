@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'gordita';
+  src: url('/fonts/gordita/gorditaregular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gordita';
+  src: url('/fonts/gordita/gorditamedium-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'gordita';
+  src: url('/fonts/gordita/gorditabold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    overscroll-behavior: none;
+    background-color: #ffffff;
+    font-family: gordita, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
