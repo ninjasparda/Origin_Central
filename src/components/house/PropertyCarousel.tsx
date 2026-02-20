@@ -27,34 +27,9 @@ export function PropertyCarousel() {
   const allSlides = [
     ...properties.map((property) => (
       <CarouselSlide key={property.id}>
-        <Box paddingX="small" paddingY="medium">
+        <Box padding="none">
           {/* Property Label */}
           <Stack space="small">
-            <Box display="flex" alignItems="center" justifyContent="center" gap="small">
-              <Text variant="subtitle-small" tone="neutralDark" align="center">
-                {property.name}
-              </Text>
-              <Box
-                paddingX="xsmall"
-                paddingY="xxsmall"
-                style={{
-                  backgroundColor: property.type === 'ces' ? '#E8F5E9' : '#E3F2FD',
-                  borderRadius: '4px',
-                }}
-              >
-                <span
-                  style={{
-                    color: property.type === 'ces' ? '#2E7D32' : '#1565C0',
-                    textTransform: 'uppercase',
-                    fontSize: '10px',
-                    fontWeight: 600,
-                  }}
-                >
-                  {property.type === 'ces' ? 'CES' : 'Mass Market'}
-                </span>
-              </Box>
-            </Box>
-
             {/* House Scene */}
             <HouseScene propertyId={property.id} />
           </Stack>

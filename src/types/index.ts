@@ -29,6 +29,7 @@ export interface CrossSellOffer {
   headline: string
   bullets: string[]
   ctaLabel: string
+  ctaUrl?: string
   saving?: string
 }
 

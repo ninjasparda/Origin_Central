@@ -100,7 +100,12 @@ export function CrossSellModal({ product }: CrossSellModalProps) {
             variant="contained"
             color="primary"
             fullWidth
-            onClick={clearSelection}
+            onClick={() => {
+              if (crossSellOffer.ctaUrl) {
+                window.open(crossSellOffer.ctaUrl, '_blank', 'noopener,noreferrer')
+              }
+              clearSelection()
+            }}
             data-id="cross-sell-cta-btn"
           >
             {crossSellOffer.ctaLabel}

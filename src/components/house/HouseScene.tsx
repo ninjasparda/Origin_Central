@@ -1,3 +1,4 @@
+import { Heading } from '@origin-digital/ods-core'
 import { HouseSVG } from './HouseSVG'
 import { ProductHotspot } from './ProductHotspot'
 import { useDashboardStore } from '../../store/useDashboardStore'
@@ -24,10 +25,17 @@ export function HouseScene({ propertyId }: HouseSceneProps) {
     : storeProducts
 
   return (
-    <div className="relative w-full px-4">
+    <div className="relative w-full">
       {/* SVG House illustration */}
       <div className="relative w-full">
         <HouseSVG propertyType={property?.type} />
+
+        {/* Greeting overlay - top left corner */}
+        <div className="absolute top-4 left-5s z-10">
+          <Heading variant="h3" component="p">
+            Good morning Sam.
+          </Heading>
+        </div>
 
         {/* Hotspot overlays - absolutely positioned over SVG */}
         {products.map((product) => (
