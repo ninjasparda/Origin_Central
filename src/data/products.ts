@@ -147,7 +147,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       ],
       ctaLabel: 'Check internet plans',
       ctaUrl: 'https://www.originenergy.com.au/electricity-gas/plans.html?planfuel=Elec_Gas&originAddressId=ORGfgzyQxAjll',
-      saving: 'Save $120/year on bundles',
+      saving: 'Save 50% on internet plan',
     },
   },
   {

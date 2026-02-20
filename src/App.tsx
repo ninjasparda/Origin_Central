@@ -13,13 +13,13 @@ function PropertyAlert() {
 
   // Different alert content based on property
   const alertContent = {
-    'property-1': {
+    'property-2': {
       tone: 'positive' as const,
       title: 'Make the most of the beautiful weather',
       message: "Today's sun is worth $10 in potential savings. All you're missing is a solar setup.",
       pictogram: 'https://res.cloudinary.com/originenergy/image/upload/v1754868133/pictograms/pictogram_solar.svg',
     },
-    'property-2': {
+    'property-1': {
       tone: 'info' as const,
       title: 'Wake up to half price internet',
       message: 'Stream, scroll and switch off without the stress. Fast, reliable internet at 50% off.',
