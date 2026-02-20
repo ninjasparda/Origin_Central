@@ -4,16 +4,17 @@ import type { Product } from '../../types'
 interface ProductHotspotProps {
   product: Product
   onClick: () => void
+  showPulse?: boolean
 }
 
-export function ProductHotspot({ product, onClick }: ProductHotspotProps) {
+export function ProductHotspot({ product, onClick, showPulse = true }: ProductHotspotProps) {
   const { hotspotPosition, connected, colors, name } = product
 
   return (
     <button
       onClick={onClick}
       aria-label={`${name} - ${connected ? 'active, tap for details' : 'inactive, tap for offer'}`}
-      className="absolute flex items-center justify-center focus:outline-none"
+      className="absolute flex items-center justify-center focus:outline-none cursor-pointer"
       style={{
         top: hotspotPosition.top,
         left: hotspotPosition.left,
@@ -22,24 +23,24 @@ export function ProductHotspot({ product, onClick }: ProductHotspotProps) {
       }}
     >
       {/* Pulse ring for active products */}
-      {connected && (
-        <motion.div
-          className="absolute inset-0 rounded-full"
-          style={{
-            border: `2px solid ${colors.pulse}`,
-            borderRadius: '50%',
-          }}
-          animate={{
-            scale: [1, 1.6, 1],
-            opacity: [0.7, 0, 0.7],
-          }}
-          transition={{
-            duration: 2.5,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
-        />
-      )}
+      {/*{connected && showPulse && (*/}
+      {/*  <motion.div*/}
+      {/*    className="absolute inset-0 rounded-full"*/}
+      {/*    style={{*/}
+      {/*      border: `2px solid ${colors.pulse}`,*/}
+      {/*      borderRadius: '50%',*/}
+      {/*    }}*/}
+      {/*    animate={{*/}
+      {/*      scale: [1, 1.6, 1],*/}
+      {/*      opacity: [0.7, 0, 0.7],*/}
+      {/*    }}*/}
+      {/*    transition={{*/}
+      {/*      duration: 2.5,*/}
+      {/*      repeat: Infinity,*/}
+      {/*      ease: 'easeInOut',*/}
+      {/*    }}*/}
+      {/*  />*/}
+      {/*)}*/}
 
       {/* Invisible tap target with subtle hover effect */}
       <motion.div

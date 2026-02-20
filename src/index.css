@@ -38,3 +38,15 @@
     -webkit-font-smoothing: antialiased;
   }
 }
+
+/* Center carousel pagination bullets */
+.property-carousel-container .swiper-pagination {
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.property-carousel-container {
+  width: 100%;
+}
+

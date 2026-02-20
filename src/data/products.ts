@@ -8,7 +8,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     icon: '☀️',
     connected: true,
     colors: PRODUCT_COLORS.solar,
-    hotspotPosition: { top: '20%', left: '26%', width: '34%', height: '31%' },
+    hotspotPosition: { top: '41%', left: '27%', width: '36%', height: '20%' },
     svgGroupId: 'solar-panels',
     stats: {
       primaryMetric: '4.2 kWh',
@@ -45,7 +45,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     icon: '🔋',
     connected: true,
     colors: PRODUCT_COLORS.battery,
-    hotspotPosition: { top: '50%', left: '1%', width: '14%', height: '40%' },
+    hotspotPosition: { top: '67%', left: '4%', width: '12%', height: '20%' },
     svgGroupId: 'battery-unit',
     stats: {
       primaryMetric: '8.4 kWh',
@@ -82,7 +82,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     icon: '⚡',
     connected: false,
     colors: PRODUCT_COLORS['ev-charger'],
-    hotspotPosition: { top: '46%', left: '60%', width: '40%', height: '51%' },
+    hotspotPosition: { top: '69%', left: '47%', width: '42%', height: '20%' },
     svgGroupId: 'ev-car',
     stats: {
       primaryMetric: '32 kWh',
@@ -119,7 +119,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     icon: '📶',
     connected: false,
     colors: PRODUCT_COLORS.internet,
-    hotspotPosition: { top: '0%', left: '37%', width: '20%', height: '22%' },
+    hotspotPosition: { top: '27%', left: '42%', width: '18%', height: '12%' },
     svgGroupId: 'wifi-icon',
     stats: {
       primaryMetric: '94 Mbps',
@@ -151,11 +151,11 @@ export const INITIAL_PRODUCTS: Product[] = [
   },
   {
     id: 'energy-plan',
-    name: 'Energy Plan',
+    name: 'Electricity',
     icon: '⚡',
     connected: true,
     colors: PRODUCT_COLORS['energy-plan'],
-    hotspotPosition: { top: '53%', left: '25%', width: '12%', height: '19%' },
+    hotspotPosition: { top: '61%', left: '23%', width: '14%', height: '12%' },
     svgGroupId: 'smart-meter',
     stats: {
       primaryMetric: '$142.30',
@@ -176,13 +176,13 @@ export const INITIAL_PRODUCTS: Product[] = [
     },
     crossSellOffer: {
       tagline: 'Switch & save',
-      headline: 'Get a better energy deal today',
+      headline: 'Get a better electricity deal today',
       bullets: [
         'Competitive rates with no lock-in contract',
         'Control your usage with the Origin app',
         '$75 welcome credit on sign-up',
       ],
-      ctaLabel: 'Compare energy plans',
+      ctaLabel: 'Compare electricity plans',
       saving: 'Save up to $300/year',
     },
   },
@@ -192,7 +192,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     icon: '🔥',
     connected: true,
     colors: PRODUCT_COLORS.gas,
-    hotspotPosition: { top: '69%', left: '14%', width: '22%', height: '25%' },
+    hotspotPosition: { top: '76%', left: '14%', width: '18%', height: '12%' },
     svgGroupId: 'gas-pipes',
     stats: {
       primaryMetric: '12.4 MJ',

@@ -9,11 +9,16 @@ export const SCENARIOS: Scenario[] = [
   {
     key: 'partial',
     label: 'Partial',
-    connectedIds: ['solar', 'battery', 'energy-plan', 'gas'],
+    connectedIds: ['solar', 'ev-charger', 'energy-plan', 'gas'],
   },
   {
     key: 'all-off',
     label: 'New Customer',
     connectedIds: [],
+  },
+  {
+    key: 'default',
+    label: 'Default',
+    connectedIds: ['solar', 'ev-charger', 'energy-plan', 'gas'],
   },
 ]

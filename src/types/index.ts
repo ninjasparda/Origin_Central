@@ -6,7 +6,7 @@ export type ProductId =
   | 'energy-plan'
   | 'gas'
 
-export type ScenarioKey = 'all-on' | 'partial' | 'all-off'
+export type ScenarioKey = 'all-on' | 'partial' | 'all-off' | 'default'
 
 export interface UsageDataPoint {
   label: string
@@ -57,4 +57,13 @@ export interface Scenario {
   key: ScenarioKey
   label: string
   connectedIds: ProductId[]
+}
+
+export type PropertyType = 'mass-market' | 'ces'
+
+export interface Property {
+  id: string
+  name: string
+  type: PropertyType
+  connectedProductIds: ProductId[]
 }
