@@ -1,4 +1,4 @@
-import { Heading } from '@origin-digital/ods-core'
+import { Heading,Stack, Text } from '@origin-digital/ods-core'
 import { HouseSVG } from './HouseSVG'
 import { ProductHotspot } from './ProductHotspot'
 import { useDashboardStore } from '../../store/useDashboardStore'
@@ -31,10 +31,15 @@ export function HouseScene({ propertyId }: HouseSceneProps) {
         <HouseSVG propertyType={property?.type} />
 
         {/* Greeting overlay - top left corner */}
-        <div className="absolute top-4 left-5s z-10">
-          <Heading variant="h3" component="p">
-            Good morning Sam.
-          </Heading>
+        <div className="absolute top-4 left-5 z-10">
+            <Stack space="small">
+                <Heading variant="h3" component="p">
+                    Good morning,
+                </Heading>
+                <Heading variant="h2" component="p">Sam</Heading>
+            </Stack>
+
+
         </div>
 
         {/* Hotspot overlays - absolutely positioned over SVG */}
