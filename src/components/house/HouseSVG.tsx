@@ -23,7 +23,7 @@ export function HouseSVG({ propertyType }: HouseSVGProps) {
       src="/hackathon-animated.lottie"
       loop
       autoplay
-      style={{ width: '300%', display: 'block', marginLeft: '-100%' }}
+      style={{ width: '274%', display: 'block', marginLeft: '-87%' }}
     />
   )
 }
